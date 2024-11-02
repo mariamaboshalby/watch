@@ -4,7 +4,7 @@ function MoviesCard({ mov }) {
 
     return (
 
-        <div div className='cardContainer overflow-hidden my-2  position-relative col-md-3 col-12' >
+        <div div className='cardContainer overflow-hidden my-2  position-relative col-md-4 col-12' >
             <Link to={`/movie/${mov.id}`}>
                 <img src={`https://image.tmdb.org/t/p/w500${mov.poster_path}`} alt='img' />
                 <div className='cardContent position-absolute row text-center  align-content-center'>
