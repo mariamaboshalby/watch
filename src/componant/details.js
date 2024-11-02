@@ -18,7 +18,7 @@ function Details() {
 
   useEffect(() => {
     getDetails()
-  }, [])
+  })
   return (
     <div className='container justify-content-center align-items-center'>
       <h1 className='text-center m-5'>{details.title} Details</h1><br />
@@ -32,18 +32,16 @@ function Details() {
           <h6 className='col-12 m-3'>Ratings: {details.vote_average} </h6>
           <h6 className='col-12 m-3'>Movie story:<br /></h6>
           <p className='mx-4 col-12'>{details.overview}</p>
-          <a href={details.homepage} target='_blank' className='col-md-3 col-12 btn btn-secondary mx-5 my-3'>
+          <a href={details.homepage} className='col-md-3 col-10 btn btn-secondary mx-5 my-3'>
 
             Watch Now
           </a>
           <Link to='/'>
-            <button className='btn btn-outline-secondary col-md-3 col-12 mx-5 my-3'>Back</button>
+            <button className='btn btn-outline-secondary col-md-3 col-10 mx-5 my-3'>Back</button>
           </Link>
         </div>
       </div>
-      {/* <div className='row justify-content-evenly m-5 container'> */}
-
-      {/* </div> */}
+  
 
 
     </div>
